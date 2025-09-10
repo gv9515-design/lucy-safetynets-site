@@ -144,4 +144,23 @@ footer {
 .experience .experience-row p {
     width: 70%;
     margin: 0;
+} .btn:hover {
+    background-color: #d94e18; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.service-box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transform: translateY(-5px); /* Lift effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+header nav a:hover {
+    color: #ffcc99; /* Light orange on hover */
+    text-decoration: underline;
+    transform: scale(1.1); /* Slight zoom */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.review-box:hover, .experience-row:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transition: all 0.3s ease; /* Smooth transition */
 }
