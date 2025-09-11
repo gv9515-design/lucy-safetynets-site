@@ -194,4 +194,71 @@ header {
     .service-options select:hover {
         background-color: #ecf0f1; /* Light gray on hover */
     }
+} nav {
+    background-color: #003087; /* Dark blue background */
+    padding: 10px;
+}
+nav a {
+    color: #FFFFFF; /* White text for contrast */
+    font-weight: bold;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color: #FFD700; /* Gold on hover for visual feedback */
+} nav a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+} nav {
+    background-color: #4A4A4A; /* Solid dark gray */
+    position: fixed; /* Optional: Fix the nav bar at the top */
+    width: 100%;
+    z-index: 1000;
+} @media (max-width: 1440px) {
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+} nav a.active {
+    background-color: #FFD700; /* Gold for active page */
+    color: #000000;
+    border-radius: 5px;
+} nav {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ccc;
+} nav {
+    background-color: #003087; /* Professional blue */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    margin: 0 15px;
+}
+nav a {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+nav a:hover {
+    color: #FFD700; /* Gold on hover */
+}
+nav a.active {
+    background-color: #FFD700;
+    color: #000000;
+    border-radius: 5px;
+}
+nav a.cta {
+    background-color: #D32F2F; /* Red for CTA */
+    border-radius: 5px;
 }
