@@ -173,3 +173,25 @@ header {
         text-align: center;
     }
 }
+
+@media (min-width: 769px) {
+    header nav a {
+        color: #ffffff; /* White links for contrast */
+        font-size: 1.1em; /* Larger text for laptop */
+        margin: 10px;
+        text-decoration: none;
+    }
+    header nav a:hover {
+        color: #e74c3c; /* Reddish hover for visibility */
+    }
+    .service-options select {
+        background-color: #ffffff; /* White background for better contrast */
+        border: 2px solid #3498db; /* Blue border for visibility */
+        color: #2c3e50; /* Dark blue text */
+        padding: 8px;
+        font-size: 1.1em; /* Slightly larger text */
+    }
+    .service-options select:hover {
+        background-color: #ecf0f1; /* Light gray on hover */
+    }
+}
