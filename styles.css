@@ -73,9 +73,24 @@ header {
         text-align: center;
     }
     header nav a {
-        display: block;
-        margin: 8px 0;
-        font-size: 1em;
+        display: inline-block; /* Keep inline for mobile */
+        margin: 5px;
+        font-size: 0.9em;
+        color: #ffffff; /* White links */
+        text-decoration: none;
+    }
+    header nav a:hover {
+        color: #3498db; /* Blue on hover */
+    }
+    .service-options {
+        margin: 10px 0;
+    }
+    .service-options select {
+        width: 100%;
+        padding: 8px;
+        background-color: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        color: #2c3e50;
     }
     .hero img, .reviews .review-box img, .experience-row img {
         width: 100%;
@@ -84,27 +99,31 @@ header {
     .service-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .service-box {
-        width: 100%;
+        width: 100%; /* Full width for better visibility */
         margin-bottom: 20px;
-        padding: 10px;
+        padding: 15px;
         border: 1px solid #ddd;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
-        min-height: 300px;
+        min-height: 300px; /* Consistent height */
+        background-color: #ffffff;
     }
     .service-box img {
         width: 100%;
         height: auto;
+        max-height: 150px;
     }
     .service-box h3 {
-        font-size: 1.1em;
+        font-size: 1.2em;
+        color: #2c3e50; /* Dark blue headings */
     }
     .service-box p {
-        font-size: 0.9em;
+        font-size: 1em;
+        color: #7f8c8d; /* Gray text */
     }
     .gallery img {
         width: 48%;
@@ -120,6 +139,7 @@ header {
     .experience-row p {
         width: 100%;
         padding: 0 10px;
+        color: #2c3e50; /* Dark blue text */
     }
     .contact-form form {
         max-width: 100%;
@@ -127,20 +147,51 @@ header {
     }
     .contact-form input, .contact-form select {
         font-size: 1em;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #ffffff; /* White input background */
+        border: 1px solid #bdc3c7; /* Light border */
+        color: #2c3e50; /* Dark blue text */
     }
     .btn {
         width: 100%;
         margin-top: 10px;
+        background-color: #3498db; /* Bright blue button */
+        color: #ffffff; /* White text */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #2980b9; /* Darker blue on hover */
     }
     footer {
         font-size: 0.9em;
         padding: 15px 10px;
+        background-color: #2c3e50; /* Dark blue footer */
+        color: #ffffff; /* White text */
+        text-align: center;
     }
 }
 
 @media (min-width: 769px) {
     header nav a {
+        color: #ffffff; /* White links for contrast */
+        font-size: 1.1em; /* Larger text for laptop */
         margin: 10px;
         text-decoration: none;
+    }
+    header nav a:hover {
+        color: #e74c3c; /* Reddish hover for visibility */
+    }
+    .service-options select {
+        background-color: #ffffff; /* White background for better contrast */
+        border: 2px solid #3498db; /* Blue border for visibility */
+        color: #2c3e50; /* Dark blue text */
+        padding: 8px;
+        font-size: 1.1em; /* Slightly larger text */
+    }
+    .service-options select:hover {
+        background-color: #ecf0f1; /* Light gray on hover */
     }
 }
