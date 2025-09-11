@@ -34,23 +34,23 @@
     </header>
     <section class="contact-form">
         <h2>Contact Us</h2>
-        <form onsubmit="alert('Message sent! Thank you. Our team will call you at the provided number.'); return false;">
-            <label for="contact">Contact Number:</label><br>
-            <input type="tel" id="contact" name="contact" placeholder="+91 8008379737" required><br>
-            <label for="service">Select Your Service:</label><br>
-            <select id="service" name="service" required>
-                <option value="">Choose a service</option>
-                <option value="balcony">Balcony Safety Nets</option>
-                <option value="window">Window Safety Nets</option>
-                <option value="custom">Custom Net Installations</option>
-                <option value="pigeon">Pigeon Net</option>
-                <option value="children">Children Net</option>
-                <option value="sports">Sports Nets</option>
-                <option value="monkey">Monkey Safety Nets</option>
-                <option value="bird">Bird Net</option>
-            </select><br>
-            <button type="submit" class="btn">Send</button>
-        </form>
+        <form action="https://formspree.io/f/YOUR_ENDPOINT" method="POST">
+    <label for="contact">Contact Number:</label><br>
+    <input type="tel" id="contact" name="contact" placeholder="+91 8008379737" required><br>
+    <label for="service">Select Your Service:</label><br>
+    <select id="service" name="service" required>
+        <option value="">Choose a service</option>
+        <option value="balcony">Balcony Safety Nets</option>
+        <option value="window">Window Safety Nets</option>
+        <option value="custom">Custom Net Installations</option>
+        <option value="pigeon">Pigeon Net</option>
+        <option value="children">Children Net</option>
+        <option value="sports">Sports Nets</option>
+        <option value="monkey">Monkey Safety Nets</option>
+        <option value="bird">Bird Net</option>
+    </select><br>
+    <button type="submit" class="btn">Send</button>
+</form>
     </section>
     <section class="services" id="services">
         <h2>Our Services</h2>
