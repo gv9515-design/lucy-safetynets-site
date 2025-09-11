@@ -44,16 +44,19 @@ nav {
 }
 
 .nav-toggle-label {
-    display: none;
-    font-size: 28px; /* Larger icon for visibility */
-    color: #FFFFFF; /* White for contrast */
+    font-size: 28px; /* Large, visible icon */
+    color: #003087; /* Matches header border/nav color for consistency */
     padding: 15px;
     cursor: pointer;
-    transition: color 0.3s ease; /* Smooth hover transition */
+    transition: color 0.3s ease; /* Smooth hover */
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Top-right corner */
+    z-index: 1001; /* Above menu */
 }
 
 .nav-toggle-label:hover {
-    color: #FFD700; /* Gold hover for visibility */
+    color: #FFD700; /* Gold hover for interactivity */
 }
 
 .nav-menu {
@@ -279,11 +282,11 @@ footer {
     }
 
     .nav-toggle-label {
-        display: block;
+        display: block; /* Always visible */
         position: absolute;
         top: 10px;
-        right: 20px;
-        z-index: 1001; /* Above menu */
+        right: 20px; /* Top-right corner */
+        z-index: 1001;
     }
 
     .nav-menu {
