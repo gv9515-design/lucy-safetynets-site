@@ -1,6 +1,8 @@
 header {
     text-align: center;
     padding: 10px 0;
+    background-color: #2c3e50; /* Dark blue header */
+    color: #ffffff; /* White text */
 }
 .service-options {
     margin: 10px 0;
@@ -8,10 +10,15 @@ header {
 .service-options select {
     padding: 5px;
     font-size: 1em;
+    background-color: #ecf0f1; /* Light gray background */
+    border: 1px solid #bdc3c7; /* Light border */
+    color: #2c3e50; /* Dark blue text */
 }
 .hero {
     text-align: center;
     padding: 20px;
+    background-color: #3498db; /* Bright blue hero */
+    color: #ffffff; /* White text */
 }
 .hero-img {
     max-width: 100%;
@@ -32,6 +39,8 @@ header {
     width: 30%;
     box-sizing: border-box;
     min-height: 300px; /* Ensure larger size */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 .service-box img {
     width: 100%;
@@ -41,6 +50,8 @@ header {
 .contact-form {
     padding: 20px;
     text-align: center;
+    background-color: #e74c3c; /* Reddish contact form */
+    color: #ffffff; /* White text */
 }
 .about {
     padding: 20px;
@@ -51,6 +62,7 @@ header {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: #f9f9f9; /* Light gray background */
 }
 
 @media (max-width: 768px) {
@@ -64,6 +76,11 @@ header {
         display: inline-block; /* Keep inline for mobile */
         margin: 5px;
         font-size: 0.9em;
+        color: #ffffff; /* White links */
+        text-decoration: none;
+    }
+    header nav a:hover {
+        color: #3498db; /* Blue on hover */
     }
     .service-options {
         margin: 10px 0;
@@ -71,6 +88,9 @@ header {
     .service-options select {
         width: 100%;
         padding: 8px;
+        background-color: #ecf0f1;
+        border: 1px solid #bdc3c7;
+        color: #2c3e50;
     }
     .hero img, .reviews .review-box img, .experience-row img {
         width: 100%;
@@ -90,6 +110,7 @@ header {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
         min-height: 300px; /* Consistent height */
+        background-color: #ffffff;
     }
     .service-box img {
         width: 100%;
@@ -98,9 +119,11 @@ header {
     }
     .service-box h3 {
         font-size: 1.2em;
+        color: #2c3e50; /* Dark blue headings */
     }
     .service-box p {
         font-size: 1em;
+        color: #7f8c8d; /* Gray text */
     }
     .gallery img {
         width: 48%;
@@ -116,6 +139,7 @@ header {
     .experience-row p {
         width: 100%;
         padding: 0 10px;
+        color: #2c3e50; /* Dark blue text */
     }
     .contact-form form {
         max-width: 100%;
@@ -125,13 +149,27 @@ header {
         font-size: 1em;
         width: 100%;
         margin-bottom: 10px;
+        background-color: #ffffff; /* White input background */
+        border: 1px solid #bdc3c7; /* Light border */
+        color: #2c3e50; /* Dark blue text */
     }
     .btn {
         width: 100%;
         margin-top: 10px;
+        background-color: #3498db; /* Bright blue button */
+        color: #ffffff; /* White text */
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: #2980b9; /* Darker blue on hover */
     }
     footer {
         font-size: 0.9em;
         padding: 15px 10px;
+        background-color: #2c3e50; /* Dark blue footer */
+        color: #ffffff; /* White text */
+        text-align: center;
     }
 }
