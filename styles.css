@@ -218,4 +218,55 @@ header nav a:hover {
         font-size: 0.9em; /* Smaller footer text */
         padding: 15px 10px;
     }
+} .hero {
+    text-align: center;
+    padding: 20px;
+}
+.hero-img {
+    max-width: 100%;
+    height: auto;
+}
+.service-container {
+    padding: 20px 10px;
+}
+.service-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.service-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+.contact-form {
+    padding: 20px;
+    text-align: center;
+}
+.about {
+    padding: 20px;
+    text-align: center;
+}
+.faq-item {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+@media (max-width: 768px) {
+    .service-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-box {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .contact-form form, .about {
+        padding: 10px;
+    }
+    .faq-item {
+        padding: 5px;
+    }
 }
