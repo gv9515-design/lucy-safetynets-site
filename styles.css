@@ -240,7 +240,8 @@ header nav a:hover {
     }
 
     
-.hero {
+
+    .hero {
     text-align: center;
     padding: 20px;
 }
@@ -261,7 +262,7 @@ header nav a:hover {
     padding: 15px;
     text-align: center;
     width: 30%;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
 }
 .service-box img {
     width: 100%;
@@ -301,10 +302,10 @@ header nav a:hover {
     .service-row {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .service-box {
-        width: 45%; /* Two columns for better mobile fit */
+        width: 30%; /* Keep three columns */
         margin-bottom: 20px;
         padding: 10px;
         border: 1px solid #ddd;
