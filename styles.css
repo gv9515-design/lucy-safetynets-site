@@ -165,31 +165,40 @@ header nav a:hover {
     transition: all 0.3s ease; /* Smooth transition */
 } @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Base font size for readability */
+        font-size: 14px; /* Slightly smaller base font for mobile */
     }
     header nav {
         text-align: center;
     }
     header nav a {
-        display: block; /* Stack links vertically */
-        margin: 10px 0;
-        font-size: 1.1em; /* Larger text for touch */
+        display: block;
+        margin: 8px 0;
+        font-size: 1em;
     }
-    .hero img, .service-box img, .gallery img, .reviews .review-box img, .experience-row img {
-        width: 100%; /* Full width images */
-        height: auto; /* Maintain aspect ratio */
+    .hero img, .reviews .review-box img, .experience-row img {
+        width: 100%;
+        height: auto;
     }
     .service-row {
-        flex-direction: column;
-        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Allow wrapping but keep columns */
     }
     .service-box {
-        width: 90%; /* Wider boxes for mobile */
+        width: 30%; /* Maintain three columns */
         margin-bottom: 20px;
         padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box; /* Include padding in width */
+    }
+    .service-box img {
+        width: 100%;
+        height: auto;
     }
     .gallery img {
-        width: 48%; /* Two images per row */
+        width: 48%;
         margin: 5px 1%;
     }
     .experience-row {
@@ -208,17 +217,19 @@ header nav a:hover {
         padding: 10px;
     }
     .contact-form input, .contact-form select {
-        font-size: 1em; /* Readable input text */
+        font-size: 1em;
     }
     .btn {
-        width: 100%; /* Full-width button */
+        width: 100%;
         margin-top: 10px;
     }
     footer {
-        font-size: 0.9em; /* Smaller footer text */
+        font-size: 0.9em;
         padding: 15px 10px;
     }
-} .hero {
+}
+    
+ .hero {
     text-align: center;
     padding: 20px;
 }
