@@ -1,4 +1,4 @@
-x<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,56 +18,89 @@ x<!DOCTYPE html>
             <a href="testimonials.html">Testimonials</a> |
             <a href="faq.html">FAQ</a>
         </nav>
+        <div class="service-options">
+            <select id="service-options" onchange="if(this.value) window.location.href=this.value;">
+                <option value="">Select a Service</option>
+                <option value="#balcony">Balcony Safety Nets</option>
+                <option value="#window">Window Safety Nets</option>
+                <option value="#custom">Custom Net Installations</option>
+                <option value="#pigeon">Pigeon Net</option>
+                <option value="#children">Children Net</option>
+                <option value="#sports">Sports Nets</option>
+                <option value="#monkey">Monkey Safety Nets</option>
+                <option value="#bird">Bird Net</option>
+            </select>
+        </div>
     </header>
-    <section class="services">
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form onsubmit="alert('Message sent! Thank you. Our team will call you at the provided number.'); return false;">
+            <label for="contact">Contact Number:</label><br>
+            <input type="tel" id="contact" name="contact" placeholder="+91 8008379737" required><br>
+            <label for="service">Select Your Service:</label><br>
+            <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option value="balcony">Balcony Safety Nets</option>
+                <option value="window">Window Safety Nets</option>
+                <option value="custom">Custom Net Installations</option>
+                <option value="pigeon">Pigeon Net</option>
+                <option value="children">Children Net</option>
+                <option value="sports">Sports Nets</option>
+                <option value="monkey">Monkey Safety Nets</option>
+                <option value="bird">Bird Net</option>
+            </select><br>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+    <section class="services" id="services">
         <h2>Our Services</h2>
         <div class="service-container">
             <div class="service-row">
-                <div class="service-box">
+                <div class="service-box" id="balcony">
                     <img src="balcony.jpg" alt="Balcony Safety Nets">
                     <h3>Balcony Safety Nets</h3>
                     <p>Price: ₹18-₹25/sq.ft. Durable and weather-resistant.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="window">
                     <img src="window.jpg" alt="Window Safety Nets">
                     <h3>Window Safety Nets</h3>
                     <p>Price: ₹15-₹20/sq.ft. Child and pet safe.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="custom">
                     <img src="custom.jpg" alt="Custom Nets">
                     <h3>Custom Net Installations</h3>
                     <p>Price: Custom quote. Tailored to your needs.</p>
                 </div>
             </div>
             <div class="service-row">
-                <div class="service-box">
+                <div class="service-box" id="pigeon">
                     <img src="pigeon.jpg" alt="Pigeon Net">
                     <h3>Pigeon Net</h3>
                     <p>Price: ₹12-₹18/sq.ft. Effective pigeon control.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="children">
                     <img src="children.jpg" alt="Children Net">
                     <h3>Children Net</h3>
                     <p>Price: ₹20-₹25/sq.ft. High-strength protection.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="sports">
                     <img src="sports.jpg" alt="Sports Nets">
                     <h3>Sports Nets</h3>
                     <p>Price: ₹15-₹22/sq.ft. Ideal for sports areas.</p>
                 </div>
             </div>
             <div class="service-row">
-                <div class="service-box">
+                <div class="service-box" id="monkey">
                     <img src="monkey.jpg" alt="Monkey Safety Nets">
                     <h3>Monkey Safety Nets</h3>
                     <p>Price: ₹18-₹25/sq.ft. Monkey-proof design.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="bird">
                     <img src="bird.jpg" alt="Bird Net">
                     <h3>Bird Net</h3>
                     <p>Price: ₹12-₹18/sq.ft. All-bird protection.</p>
                 </div>
-                <div class="service-box">
+                <div class="service-box" id="installation">
                     <img src="installation.jpg" alt="Expert Installation">
                     <h3>Expert Installation</h3>
                     <p>Free with every purchase. 24/7 support.</p>
@@ -113,26 +146,6 @@ x<!DOCTYPE html>
             <img src="experience3.jpg" alt="Happy Customer with Nets">
             <p>Using UV-resistant and weatherproof materials, contact us at +91 8008379737 for a free quote today!</p>
         </div>
-    </section>
-    <section class="contact-form">
-        <h2>Contact Us</h2>
-        <form onsubmit="alert('Message sent! Thank you. Our team will call you at the provided number.'); return false;">
-            <label for="contact">Contact Number:</label><br>
-            <input type="tel" id="contact" name="contact" placeholder="+91 8008379737" required><br>
-            <label for="service">Select Your Service:</label><br>
-            <select id="service" name="service" required>
-                <option value="">Choose a service</option>
-                <option value="balcony">Balcony Safety Nets</option>
-                <option value="window">Window Safety Nets</option>
-                <option value="custom">Custom Net Installations</option>
-                <option value="pigeon">Pigeon Net</option>
-                <option value="children">Children Net</option>
-                <option value="sports">Sports Nets</option>
-                <option value="monkey">Monkey Safety Nets</option>
-                <option value="bird">Bird Net</option>
-            </select><br>
-            <button type="submit" class="btn">Send</button>
-        </form>
     </section>
     <footer>
         <p>Contact Mr. Jagadeesh: +91 8008379737 | Email: info@lucysafetynets.com | Chennai, Tamil Nadu</p>
